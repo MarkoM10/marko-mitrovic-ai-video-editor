@@ -72,7 +72,7 @@ a{color:inherit}
 .strip .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:0}
 .stat{padding:22px 18px;border-left:1px solid var(--line)}
 .stat:first-child{border-left:0;padding-left:0}
-.stat b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1;letter-spacing:-.02em}
+.stat b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(20px,2.2vw,26px);line-height:1.1;letter-spacing:-.015em;margin-bottom:6px}
 .stat span{color:var(--muted);font-size:13.5px}
 @media (max-width:720px){.strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(3){border-left:0;padding-left:0}.stat{border-top:1px solid var(--line)}.stat:nth-child(-n+2){border-top:0}}
 
@@ -122,7 +122,7 @@ section.block{padding-block:84px 24px}
 .step dd{margin:0;color:#cfd2d8;font-size:15px}
 .refs{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .refs img{width:64px;height:84px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
-@media (max-width:860px){.project{grid-template-columns:1fr;gap:28px}.player{position:static}}
+@media (max-width:860px){.project{grid-template-columns:minmax(0,1fr);gap:28px}.player{position:static}}
 @media (max-width:520px){.step{grid-template-columns:1fr;gap:4px}}
 
 /* ---------- QA checklist ---------- */
@@ -131,6 +131,7 @@ section.block{padding-block:84px 24px}
 .qa b{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.01em;margin-bottom:6px}
 .qa b::before{content:"";width:16px;height:16px;border-radius:4px;border:2px solid var(--clip-a);background:linear-gradient(135deg,transparent 45%,var(--clip-a) 45% 60%,transparent 60%)}
 .qa p{margin:0;color:var(--muted);font-size:14.5px}
+.qa small{display:block;margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font:500 12px var(--mono);color:var(--clip-a)}
 @media (max-width:860px){.qa{grid-template-columns:1fr 1fr}}
 @media (max-width:540px){.qa{grid-template-columns:1fr}}
 
@@ -166,8 +167,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           <a class="btn" href="#contact">Get in touch</a>
         </div>
         <div class="tools" aria-label="Tools">
-          <span class="eyebrow" style="margin-right:4px">Built with</span>
-          <span class="t">Higgsfield</span><span class="t">Gemini Omni</span><span class="t">GPT Image</span><span class="t">Whisper</span><span class="t">FFmpeg + Python</span>
+          <span class="eyebrow" style="margin-right:4px">Tools</span>
+          <span class="t">Seedance</span><span class="t">Kling</span><span class="t">Veo</span><span class="t">Nano Banana</span><span class="t">ElevenLabs</span><span class="t">Suno</span><span class="t">Higgsfield</span><span class="t">Gemini Omni</span><span class="t">GPT Image</span><span class="t">Whisper</span><span class="t">FFmpeg</span>
         </div>
       </div>
       <div>
@@ -184,12 +185,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     </div>
   </section>
 
-  <div class="strip" aria-label="Portfolio in numbers">
+  <div class="strip" aria-label="What you get with every ad">
     <div class="wrap">
-      <div class="stat"><b>2</b><span>full ads, two formats</span></div>
-      <div class="stat"><b>6</b><span>versions to test, from 2 ads</span></div>
-      <div class="stat"><b>0</b><span>cameras, actors or stock clips</span></div>
-      <div class="stat"><b>−14</b><span>LUFS, every final checked</span></div>
+      <div class="stat"><b>Ad + hooks</b><span>Every ad comes with 2–3 openings to test.</span></div>
+      <div class="stat"><b>Self-reviewed</b><span>Checked against the list below before you see it, so review time goes on creative.</span></div>
+      <div class="stat"><b>Brief first</b><span>Every point in the brief is ticked off before delivery.</span></div>
+      <div class="stat"><b>CET · remote</b><span>Full-time, same working day as a European team.</span></div>
     </div>
   </div>
 
@@ -312,15 +313,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     <div class="wrap">
       <div class="shead">
         <div><div class="eyebrow">Quality control</div><h2>What I check before anything ships.</h2></div>
-        <p>AI gives you footage. These checks turn it into an ad a brand can put money behind.</p>
+        <p>Most revision rounds come from the same few mistakes. I catch them myself, before anyone else has to review.</p>
       </div>
       <div class="qa">
-        <div><b>Every word</b><p>Whisper transcript compared with the script, line by line. A misread word gets re-shot.</p></div>
-        <div><b>Same person</b><p>Face, wardrobe and voice stay the same from first shot to last, measured, not guessed.</p></div>
-        <div><b>Story logic</b><p>Actions happen in the right order, and the product looks the same size in every shot.</p></div>
-        <div><b>Clean cuts</b><p>No flash frames, no caption spilling into the next shot, no dips to black.</p></div>
-        <div><b>Safe zone</b><p>Captions and overlays clear of the app's buttons and never covering the key moment.</p></div>
-        <div><b>Sound</b><p>Per-clip noise removal, one steady room tone, delivered at −14 LUFS.</p></div>
+        <div><b>Scene continuity</b><p>Inside one scene, every clip continues the last. Nobody appears or vanishes, and furniture and props stay where they were.</p><small>How: frames from both sides of every cut, side by side.</small></div>
+        <div><b>Light and time</b><p>The same moment keeps the same colour temperature. Dusk outside the window doesn't turn into night halfway through a conversation.</p><small>How: compare the window and skin tones across the scene.</small></div>
+        <div><b>Reactions make sense</b><p>Nobody smiles in a worried beat, and nobody just stands there while the other person is upset.</p><small>How: watch once with the sound off, faces only.</small></div>
+        <div><b>Product</b><p>Same size and shape in every shot, placed in the scene rather than pasted on like a sticker. In story ads it isn't revealed too early.</p><small>How: crop the product from each shot and line the crops up.</small></div>
+        <div><b>Every word</b><p>Generated speech matches the script word for word. Product names and hard words like CoQ10 are pronounced right, or the line gets regenerated.</p><small>How: a Whisper transcript against the script.</small></div>
+        <div><b>One voice</b><p>Each character's voice sounds the same in every clip, with no jump in pitch or tone between takes.</p><small>How: play the lines back to back and compare pitch.</small></div>
+        <div><b>Captions</b><p>One line per caption. One speaker, one sentence, starting with a capital letter. In sync with the speech and clear of the app's buttons.</p><small>How: scrub every caption in and out point.</small></div>
+        <div><b>Pacing and cuts</b><p>No clip drags: four seconds of nothing gets cut to two. Static B-roll gets a slow push-in. No flash frames or one-frame jumps.</p><small>How: an automatic frame scan at every cut.</small></div>
+        <div><b>Brief and sound</b><p>Every point in the brief is in the cut. One music track from start to end, background noise removed, delivered at −14 LUFS.</p><small>How: tick the brief line by line, then a loudness meter.</small></div>
       </div>
     </div>
   </section>
@@ -332,7 +336,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
       <div class="mailrow">
         <span class="mail" id="mail">mitrovic.m.marko00@gmail.com</span>
         <button class="btn" type="button" id="copy">Copy email</button>
-        <a class="btn" href="https://www.linkedin.com/in/mitrovicmarko/" target="_blank" rel="noopener">LinkedIn</a>
         <span class="copied" id="copied" aria-live="polite"></span>
       </div>
       <p style="color:var(--muted);margin-top:22px">Based in Serbia. Working remotely, open to full-time roles.</p>
