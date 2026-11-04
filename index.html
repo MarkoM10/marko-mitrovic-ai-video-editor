@@ -185,7 +185,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
         </div>
         <div class="tools" aria-label="Tools">
           <span class="eyebrow" style="margin-right:4px">Tools</span>
-          <span class="t">Seedance</span><span class="t">Kling</span><span class="t">Veo</span><span class="t">Nano Banana</span><span class="t">ElevenLabs</span><span class="t">Suno</span><span class="t">Higgsfield</span><span class="t">Gemini Omni</span><span class="t">GPT Image</span><span class="t">Whisper</span><span class="t">FFmpeg</span>
+          <span class="t">Seedance</span><span class="t">Kling</span><span class="t">Wan</span><span class="t">Veo</span><span class="t">Nano Banana</span><span class="t">ElevenLabs</span><span class="t">Suno</span><span class="t">Higgsfield</span><span class="t">Gemini Omni</span><span class="t">GPT Image</span><span class="t">Whisper</span><span class="t">FFmpeg</span>
         </div>
       </div>
       <div>
@@ -323,6 +323,57 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </dl>
         </div>
       </article>
+
+      <!-- ===== Steady ===== -->
+      <article class="project" id="steady">
+        <div class="player">
+          <div class="phone" data-player="steady">
+            <div class="screen">
+              <span class="island" aria-hidden="true"></span>
+              <video muted loop playsinline preload="metadata" poster="assets/steady-main.jpg" src="assets/steady-main.mp4" aria-label="Steady song ad"></video>
+              <button class="sound" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="w" d="m16 9 5 6m0-6-5 6"/></svg><span>Tap for sound</span></button>
+              <span class="tc" aria-hidden="true">00:00</span>
+            </div>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Steady versions">
+            <button class="tab" role="tab" aria-selected="true" data-src="steady-main" data-note="The full song: the whole story is sung, start to finish.">Full song</button>
+          </div>
+          <p class="tabnote" aria-live="polite">The full song: the whole story is sung, start to finish.</p>
+        </div>
+
+        <div>
+          <span class="tag">AI song ad</span>
+          <h3>Steady: “3 PM”</h3>
+          <p class="log">Megan runs on espresso and energy drinks until she falls asleep in the school pickup line. She sings her way to the real problem, the caffeine roller coaster, and swaps it for one calm morning cup.</p>
+          <div class="meta"><span>Moms 35–45</span><span>Mushroom coffee</span><span>52 s</span><span>9:16</span><span>Spec ad · invented brand</span></div>
+
+          <p class="subh">Anatomy of the ad</p>
+          <div class="track" data-for="steady">
+            <div class="ruler"><span>00:00</span><span>00:13</span><span>00:26</span><span>00:39</span><span>00:52</span></div>
+            <div class="beats">
+              <button class="beat" type="button" data-t="0"><img src="assets/beat-s-1.jpg" alt="Megan sings at the kitchen counter with three empty espresso cups" loading="lazy"><span class="bt"><span>00:00</span><span>HOOK</span></span><span class="bn">She sings it</span><span class="bq">“Third espresso, and it's barely morning.”</span></button>
+              <button class="beat" type="button" data-t="9.85"><img src="assets/beat-s-2.jpg" alt="Megan asleep in the minivan while Lily knocks on the window" loading="lazy"><span class="bt"><span>00:10</span><span>PROBLEM</span></span><span class="bn">The 3 PM crash</span><span class="bq">“Mama, you fine?”</span></button>
+              <button class="beat" type="button" data-t="19.35"><img src="assets/beat-s-3.jpg" alt="Megan sings in a spotlight on a dark stage" loading="lazy"><span class="bt"><span>00:19</span><span>TURN</span></span><span class="bn">It ain't me</span><span class="bq">“That caffeine coaster's been ridin' me.”</span></button>
+              <button class="beat" type="button" data-t="28.6"><img src="assets/beat-s-4.jpg" alt="Megan scoops Steady mushroom coffee into her mug" loading="lazy"><span class="bt"><span>00:28</span><span>PRODUCT</span></span><span class="bn">One calm cup</span><span class="bq">“Less caffeine in my cup.”</span></button>
+              <button class="beat" type="button" data-t="37.55"><img src="assets/beat-s-5.jpg" alt="Megan sings while pushing Lily on the swing" loading="lazy"><span class="bt"><span>00:37</span><span>PAYOFF</span></span><span class="bn">5 PM, still going</span><span class="bq">“Now I'm Steady, and I'm ready.”</span></button>
+            </div>
+            <div class="lanes" aria-hidden="true">
+              <div class="lane"><span>V1</span><span class="bar" style="--c:var(--clip-v);--w:8%"></span></div>
+              <div class="lane"><span>A1</span><span class="bar" style="--c:var(--clip-a);--w:100%"></span></div>
+            </div>
+          </div>
+
+          <p class="subh">How it was made</p>
+          <dl class="steps">
+            <div class="step"><dt>Song<small>01</small></dt><dd>Pop-country lyrics written as ad copy in rhymed couplets, then generated in Suno at 104 BPM. The song came first and set the timing of every shot.</dd></div>
+            <div class="step"><dt>Characters<small>02</small></dt><dd>Sheets for Megan, her daughter Lily, Buzz the energy-drink villain and the Steady pack, used as references in every frame. Megan's face from the first shot is the reference for every later one.
+              <div class="refs"><img src="assets/ref-megan.jpg" alt="Megan reference" loading="lazy"><img src="assets/ref-lily.jpg" alt="Lily reference" loading="lazy"><img src="assets/ref-buzz.jpg" alt="Buzz reference" loading="lazy"><img src="assets/ref-steady.jpg" alt="Steady product" loading="lazy"></div></dd></div>
+            <div class="step"><dt>Generate<small>03</small></dt><dd>Every lyric timed with Whisper. Singing shots on Wan 2.7, driven by the exact slice of the song so the lips land on the beat. Silent B-roll on Kling 3.0, one clear action per shot, from GPT Image start frames.</dd></div>
+            <div class="step"><dt>QA<small>04</small></dt><dd>Frames from both sides of every cut compared, so nothing resets mid-action. Eyes checked on every look at the phone. Captions moved off faces and the phone screen. Claims kept to “less caffeine”.</dd></div>
+            <div class="step"><dt>Edit<small>05</small></dt><dd>One uncut song under every frame, clip audio muted, cuts on the sung phrases, lyric captions two to four words at a time, title hook on frame one, delivered at −14 LUFS.</dd></div>
+          </dl>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -363,7 +414,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 <footer>
   <div class="wrap">
     <span>© 2026 Marko Mitrovic</span>
-    <span>Hearora and Curlette are invented brands. Both ads are spec work made in 2026 to show process and range.</span>
+    <span>Hearora, Curlette and Steady are invented brands. All three ads are spec work made in 2026 to show process and range.</span>
   </div>
 </footer>
 
